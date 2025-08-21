@@ -38,7 +38,7 @@ const SlideInView = () => {
   
  w-full  "
     >
-        <p className="text-xl font-semibold flex gap-x-2"> Crafting <span className="text-red-400">
+        <p className="text-xl font-semibold flex gap-x-2"> Crafting <span className="text-blue-400">
 
             
             <DecryptingText targetText={"Real-World"}/>

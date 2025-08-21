@@ -9,7 +9,7 @@ function WraperComponent({children}) {
   // for easy controll 
 
   return (
-    <div>
+    <div className='bg-[#021325]'>
         <nav>
           <MenuBar/>
         </nav>

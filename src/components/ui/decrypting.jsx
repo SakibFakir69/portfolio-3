@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-const CHARACTERS = "ABCDEFGHIJPQRSTUVWXYZabcdefghijklmnstuvwxyz!@#$%^&*()-+=[]{}|;:,.<>?";
+const CHARACTERS = "ABCDEFGHIJPQRSTUVWXYZabcdvwxyz!@#$%^&*()-+=[]{}|;:,.<>?";
 export const DecryptingText = ({
   targetText,
   speed = 8

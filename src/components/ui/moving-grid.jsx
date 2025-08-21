@@ -59,11 +59,11 @@ export default function GridBackgroundView() {
     <div className="relative w-full h-screen bg-slate-950">
       <GridBackground />
       <div className="relative z-10 flex items-center justify-center h-full">
-
         <div className="text-center px-4 border border-r-blue-500 w-full">
-          
-
           <SlideInView></SlideInView>
+
+          <button className="bg-amber-500">project</button>
+          <button className="bg-red-500">Resume</button>
           
         </div>
       </div>
