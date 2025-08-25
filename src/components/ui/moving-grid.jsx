@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import SlideInView from "./slide-in";
 import DecryptingView from "./decrypting";
 import { DecryptingText } from "./decrypting";
+import ShimmerButton from "./button";
 
 const GridBackground = () => {
   const [mousePosition, setMousePosition] = useState({
@@ -59,12 +60,18 @@ export default function GridBackgroundView() {
     <div className="relative w-full h-screen bg-slate-950">
       <GridBackground />
       <div className="relative z-10 flex items-center justify-center h-full">
-        <div className="text-center px-4 border border-r-blue-500 w-full">
+        <div className="text-center px-4 w-full">
           <SlideInView></SlideInView>
 
-          <button className="bg-amber-500">project</button>
-          <button className="bg-red-500">Resume</button>
           
+          <div className="flex w-full justify-center gap-x-4 mt-4">
+           
+           <button className="md:px-16 px-10 md:py-3 py-2 rounded bg-white font-semibold hover:bg-transparent hover:text-white border transform delay-100 border-gray-300/20">Project</button>
+
+           <button className="md:px-16 px-10 md:py-3 py-2 rounded text-white hover:bg-black font-semibold border border-amber-50/20 bg-transparent transform duration-75 delay-100">Resume</button>
+        
+          
+          </div>
         </div>
       </div>
     </div>
