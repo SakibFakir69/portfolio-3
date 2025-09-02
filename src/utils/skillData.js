@@ -8,8 +8,8 @@ export const skillData = [
     title: "Programming Languages",
     icon: 'https://img.icons8.com/3d-fluency/94/source-code.png',
     skill: [
-      { icon: '', name: "C++", color: "#00599C" },
-      { icon: '', name: "JavaScript", color: "#F7DF1E" },
+      { icon: 'https://img.icons8.com/color/48/c-plus-plus-logo.png', name: "C++", color: "#00599C" },
+      { icon: 'https://img.icons8.com/fluency/48/javascript.png', name: "JavaScript", color: "#F7DF1E" },
     ],
   },
 
@@ -18,12 +18,12 @@ export const skillData = [
     title: "Frontend Development",
     icon:"https://img.icons8.com/external-beshi-flat-kerismaker/50/external-Front-end-coding-and-programing-beshi-flat-kerismaker.png",
     skill: [
-      { icon: '', name: "TailwindCSS", color: "#38B2AC" },
-      { icon: '', name: "JavaScript", color: "#F7DF1E" },
-      { icon: '', name: "React.js", color: "#61DAFB" },
+      { icon: 'https://img.icons8.com/color/48/tailwindcss.png', name: "TailwindCSS", color: "#38B2AC" },
+      { icon: 'https://img.icons8.com/fluency/48/javascript.png', name: "JavaScript", color: "#F7DF1E" },
+      { icon: 'https://img.icons8.com/external-tal-revivo-color-tal-revivo/50/external-react-a-javascript-library-for-building-user-interfaces-logo-color-tal-revivo.png', name: "React.js", color: "#61DAFB" },
       { icon: '', name: "Next.js", color: "#000000" },
       { icon: '', name: "ShadCN UI", color: "#6B7280" },
-      { icon: '', name: "Redux ToolKit", color: "#764ABC" },
+      { icon: 'https://img.icons8.com/color/48/redux.png', name: "Redux ToolKit", color: "#764ABC" },
     ],
   },
 
@@ -32,10 +32,10 @@ export const skillData = [
     title: "Backend Development",
     icon:"https://img.icons8.com/3d-fluency/50/data-configuration.png",
     skill: [
-      { icon: '', name: "JavaScript", color: "#F7DF1E" },
-      { icon:'', name: "Express.js", color: "#000000" },
-      { icon: '', name: "Node.js", color: "#339933" },
-      { icon: '', name: "JWT", color: "#D63AFF" },
+      { icon: 'https://img.icons8.com/fluency/48/javascript.png', name: "JavaScript", color: "#F7DF1E" },
+      { icon:'https://img.icons8.com/nolan/64/express-js.png', name: "Express.js", color: "#000000" },
+      { icon: 'https://img.icons8.com/color/48/nodejs.png', name: "Node.js", color: "#339933" },
+      { icon: 'https://img.icons8.com/color/48/java-web-token.png', name: "JWT", color: "#D63AFF" },
     ],
   },
 
@@ -44,10 +44,10 @@ export const skillData = [
     title: "Tools",
     icon:"https://img.icons8.com/arcade/50/administrative-tools.png",
     skill: [
-      // { icon: SiVisualstudiocode, name: "VS Code", color: "#007ACC" },
-      { icon: '', name: "Code::Blocks", color: "#00599C" },
-      { icon: '', name: "Git", color: "#F05032" },
-      { icon: '', name: "GitHub", color: "#181717" },
+      { icon: "https://img.icons8.com/color/48/visual-studio-code-2019.png", name: "VS Code", color: "#007ACC" },
+      { icon: 'https://img.icons8.com/color-glass/50/code-blocks.png', name: "Code::Blocks", color: "#00599C" },
+      { icon: 'https://img.icons8.com/color/48/git.png', name: "Git", color: "#F05032" },
+      { icon: 'https://img.icons8.com/glyph-neue/64/github.png', name: "GitHub", color: "#181717" },
     ],
   },
 ];

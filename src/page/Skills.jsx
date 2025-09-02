@@ -30,6 +30,7 @@ function Skills() {
            <div className="flex flex-wrap justify-center gap-x-5 mt-6 p-8">
              {langause.skill.map((item, key) => (
               <div key={key} className="flex flex-row">
+                <img src={item.icon}/>
                 <p className="border">{item.name}</p>
               </div>
             ))}
@@ -53,6 +54,7 @@ function Skills() {
               {frontend.skill.map((item, key) => (
 
                 <div key={key} className="border">
+                   <img src={item.icon}/>
                   <p>{item.name}</p>
                 </div>
               ))}
@@ -74,6 +76,7 @@ function Skills() {
            <div className="flex flex-wrap justify-center gap-x-5 mt-6 p-8">
              {backend.skill.map((item, key) => (
               <div key={key}>
+                 <img src={item.icon}/>
                 <p className="border">{item.name}</p>
               </div>
             ))}
@@ -97,6 +100,7 @@ function Skills() {
            <div className="flex flex-wrap justify-center gap-x-5 mt-6 p-8">
              {tools.skill.map((item, key) => (
               <div key={key}>
+                 <img src={item.icon}/>
                 <p className="border">{item.name}</p>
               </div>
             ))}
