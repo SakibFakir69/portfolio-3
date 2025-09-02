@@ -5,7 +5,7 @@ import SlideInView from "./slide-in";
 import DecryptingView from "./decrypting";
 import { DecryptingText } from "./decrypting";
 import ShimmerButton from "./button";
-
+import { Link } from "react-router";
 const GridBackground = () => {
   const [mousePosition, setMousePosition] = useState({
     x: 0,
@@ -66,9 +66,9 @@ export default function GridBackgroundView() {
           
           <div className="flex w-full justify-center gap-x-4 mt-4">
            
-           <button className="md:px-16 px-10 md:py-3 py-2 rounded bg-white font-semibold hover:bg-transparent hover:text-white border transform delay-100 border-gray-300/20">Project</button>
+           <Link to={'/project'} className="md:px-16 px-10 md:py-3 py-2 rounded bg-white font-semibold hover:bg-transparent hover:text-white border transform delay-100 border-gray-300/20">Project</Link>
 
-           <button className="md:px-16 px-10 md:py-3 py-2 rounded text-white hover:bg-black font-semibold border border-amber-50/20 bg-transparent transform duration-75 delay-100">Resume</button>
+           <button className="md:px-16 px-10 md:py-3 py-2 rounded text-white hover:bg-black font-semibold border border-amber-50/20 bg-transparent transform duration-75 delay-100 cursor-pointer">Resume</button>
         
           
           </div>
