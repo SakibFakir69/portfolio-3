@@ -14,85 +14,98 @@ function Skills() {
   const tools = skillData[3];
 
   return (
-    <div className={`${location === "/skill" && " py-20"} h-screen p-10`}>
+    <div className={`${location === "/skill" && " py-20"} min-h-screen p-10`}>
       <h1 className="text-white">My skill</h1>
 
+      <section className="grid  md:grid-cols-3 grid-cols-1 gap-x-10 gap-3 py-20">
+        {
+          <div className="border bg-white">
+            <p className="text-center flex justify-center items-center gap-x-3">
+              <img src={langause.icon} className="size-10" />
+              <p className="font-semibold text-xl"> {langause.title}</p>
+            </p>
 
-    <section className="grid  grid-cols-3 gap-x-10 gap-3 py-20">
-      
-      {
-        <div className="border bg-white">
-          <p className="text-center">
-            <img src={langause.icon}/> {langause.title}
-          </p>
-          <hr/>
+            <hr />
 
-          {langause.skill.map((item, key) => (
-            <div key={key}>
-              <p>{item.name}</p>
+           <div className="flex flex-wrap justify-center gap-x-5 mt-6 p-8">
+             {langause.skill.map((item, key) => (
+              <div key={key} className="flex flex-row">
+                <p className="border">{item.name}</p>
+              </div>
+            ))}
+           </div>
+
+          </div>
+        }
+
+        {/* front-end */}
+
+        {
+          <div className="border bg-white">
+            <p className="text-center flex justify-center items-center gap-x-3">
+              <img src={frontend.icon} className="size-10" />
+              <p className="font-semibold text-xl">{frontend.title}</p>
+            </p>
+
+            <hr />
+
+            <div className="flex flex-wrap justify-center gap-x-5 mt-6 p-8">
+              {frontend.skill.map((item, key) => (
+
+                <div key={key} className="border">
+                  <p>{item.name}</p>
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
-      }
+          </div>
+        }
 
-      {/* front-end */}
+        {/* backend */}
 
-      {
-        <div className="border bg-white">
-          <p className="text-center">
-            {frontend.icon} {frontend.title}
-          </p>
+        {
+          <div className="border bg-white">
+            <p className="text-center flex justify-center items-center gap-x-3">
+              <img src={backend.icon} className="size-10" />
+              <p className="font-semibold text-xl"> {backend.title}</p>
+            </p>
 
-          <hr/>
+            <hr />
 
-          {frontend.skill.map((item, key) => (
-            <div key={key}>
-              <p>{item.name}</p>
-            </div>
-          ))}
-        </div>
-      }
+           <div className="flex flex-wrap justify-center gap-x-5 mt-6 p-8">
+             {backend.skill.map((item, key) => (
+              <div key={key}>
+                <p className="border">{item.name}</p>
+              </div>
+            ))}
+           </div>
 
+          </div>
+        }
 
-      {/* backend */}
+        {/* tools */}
 
-       {
-        <div className="border bg-white">
-          <p className="text-center">
-            {backend.icon} {backend.title}
-          </p>
+        {
+          <div className="border bg-white">
+            <p className="text-center flex justify-center items-center gap-x-3">
+              <img src={tools.icon} className="size-10" />
+              <p className="font-semibold text-xl"> {tools.title}</p>
+            </p>
 
-          <hr/>
+            <hr />
 
-          {backend.skill.map((item, key) => (
-            <div key={key}>
-              <p>{item.name}</p>
-            </div>
-          ))}
-        </div>
-      }
+           
+           <div className="flex flex-wrap justify-center gap-x-5 mt-6 p-8">
+             {tools.skill.map((item, key) => (
+              <div key={key}>
+                <p className="border">{item.name}</p>
+              </div>
+            ))}
 
-      {/* tools */}
+           </div>
 
-       {
-        <div className="border bg-white">
-          <p className="text-center">
-            {tools.icon} {tools.title}
-          </p>
-
-          <hr/>
-
-          {tools.skill.map((item, key) => (
-            <div key={key}>
-              <p>{item.name}</p>
-            </div>
-          ))}
-        </div>
-      }
-    </section>
-
-
-
+          </div>
+        }
+      </section>
     </div>
   );
 }

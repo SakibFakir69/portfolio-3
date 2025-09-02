@@ -16,7 +16,7 @@ export const skillData = [
   // Frontend
   {
     title: "Frontend Development",
-    icon: SiReact,
+    icon:"https://img.icons8.com/external-beshi-flat-kerismaker/50/external-Front-end-coding-and-programing-beshi-flat-kerismaker.png",
     skill: [
       { icon: '', name: "TailwindCSS", color: "#38B2AC" },
       { icon: '', name: "JavaScript", color: "#F7DF1E" },
@@ -30,7 +30,7 @@ export const skillData = [
   // Backend
   {
     title: "Backend Development",
-    icon: ServerIcon,
+    icon:"https://img.icons8.com/3d-fluency/50/data-configuration.png",
     skill: [
       { icon: '', name: "JavaScript", color: "#F7DF1E" },
       { icon:'', name: "Express.js", color: "#000000" },
@@ -42,7 +42,7 @@ export const skillData = [
   // Tools
   {
     title: "Tools",
-    icon: FaTools,
+    icon:"https://img.icons8.com/arcade/50/administrative-tools.png",
     skill: [
       // { icon: SiVisualstudiocode, name: "VS Code", color: "#007ACC" },
       { icon: '', name: "Code::Blocks", color: "#00599C" },
