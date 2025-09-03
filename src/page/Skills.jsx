@@ -1,3 +1,4 @@
+import { MagicCard } from "@/components/magicui/magic-card";
 import { skillData } from "@/utils/skillData";
 import React from "react";
 import { useLocation } from "react-router";
@@ -15,29 +16,46 @@ function Skills() {
 
   return (
     <div className={`${location === "/skill" && " py-20"} min-h-screen p-10`}>
+
       <h1 className="text-white">My skill</h1>
 
-      <section className="grid  md:grid-cols-3 grid-cols-1 gap-x-10 gap-3 py-20">
-        {
-          <div className="border bg-white">
-            <p className="text-center flex justify-center items-center gap-x-3">
-              <img src={langause.icon} className="size-10" />
-              <p className="font-semibold text-xl"> {langause.title}</p>
-            </p>
+      <section className="grid  md:grid-cols-3 grid-cols-1 gap-x-10 gap-3 py-20 bg-transparent">
 
-            <hr />
+        <MagicCard
+         
+          gradientColor="#FF6B6B"
+          gradientSize={200}
+        >
+          <div className="  bg-black h-full w-full min-h-[250px]
+           rounded-lg p-4 flex flex-col items-center gap-y-4">
 
-           <div className="flex flex-wrap justify-center gap-x-5 mt-6 p-8">
-             {langause.skill.map((item, key) => (
-              <div key={key} className="flex flex-row">
-                <img src={item.icon}/>
-                <p className="border">{item.name}</p>
-              </div>
-            ))}
-           </div>
+            {/* Header */}
+            <div className="flex items-center gap-x-3 h-full ">
+              <img
+                src={langause.icon}
+                className="w-10 h-10"
+                alt="Language Icon"
+              />
+              <span className="font-semibold text-xl border">{langause.title}</span>
 
+            </div>
+
+            <hr className="w-full border-gray-300" />
+
+            {/* Skills */}
+            <div className="flex flex-wrap justify-center gap-5 mt-4">
+              {langause.skill.map((item, key) => (
+                <div
+                  key={key}
+                  className="flex items-center gap-x-2 border border-gray-300 rounded px-3 py-1"
+                >
+                  <img src={item.icon} className="w-6 h-6" alt={item.name} />
+                  <span className="text-sm font-medium">{item.name}</span>
+                </div>
+              ))}
+            </div>
           </div>
-        }
+        </MagicCard>
 
         {/* front-end */}
 
@@ -52,9 +70,8 @@ function Skills() {
 
             <div className="flex flex-wrap justify-center gap-x-5 mt-6 p-8">
               {frontend.skill.map((item, key) => (
-
                 <div key={key} className="border">
-                   <img src={item.icon}/>
+                  <img src={item.icon} />
                   <p>{item.name}</p>
                 </div>
               ))}
@@ -73,15 +90,14 @@ function Skills() {
 
             <hr />
 
-           <div className="flex flex-wrap justify-center gap-x-5 mt-6 p-8">
-             {backend.skill.map((item, key) => (
-              <div key={key}>
-                 <img src={item.icon}/>
-                <p className="border">{item.name}</p>
-              </div>
-            ))}
-           </div>
-
+            <div className="flex flex-wrap justify-center gap-x-5 mt-6 p-8">
+              {backend.skill.map((item, key) => (
+                <div key={key}>
+                  <img src={item.icon} />
+                  <p className="border">{item.name}</p>
+                </div>
+              ))}
+            </div>
           </div>
         }
 
@@ -96,17 +112,14 @@ function Skills() {
 
             <hr />
 
-           
-           <div className="flex flex-wrap justify-center gap-x-5 mt-6 p-8">
-             {tools.skill.map((item, key) => (
-              <div key={key}>
-                 <img src={item.icon}/>
-                <p className="border">{item.name}</p>
-              </div>
-            ))}
-
-           </div>
-
+            <div className="flex flex-wrap justify-center gap-x-5 mt-6 p-8">
+              {tools.skill.map((item, key) => (
+                <div key={key}>
+                  <img src={item.icon} />
+                  <p className="border">{item.name}</p>
+                </div>
+              ))}
+            </div>
           </div>
         }
       </section>
