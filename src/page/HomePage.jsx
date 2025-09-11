@@ -4,6 +4,7 @@ import ContactPage from "./ContactPage";
 import Experience from "./Experience";
 import { AnimatedThemeToggler } from "@/components/magicui/animated-theme-toggler";
 import { ScrollProgress } from "@/components/magicui/scroll-progress";
+import Skills from "./Skills";
 
 function HomePage() {
   return (
@@ -17,6 +18,7 @@ function HomePage() {
       <HeroSection />
      
       <Experience />
+      <Skills/>
 
       <ContactPage />
     </div>
