@@ -25,7 +25,7 @@ function Skills() {
 
         <GlowCard>
           <div
-          className="  bg-black h-full w-full 
+          className="  h-full w-full 
            rounded-lg p-4 flex flex-col items-center gap-y-4"
         >
            
@@ -46,9 +46,9 @@ function Skills() {
             {langause.skill.map((item, key) => (
               <div
                 key={key}
-                className="flex items-center gap-x-2 border border-gray-300 rounded px-3 py-1"
+                className="flex flex-row items-center gap-x-2 border border-teal-300/30 rounded px-3 py-1 hover:border-teal-200 transition duration-150 delay-100"
               >
-                <img src={item.icon} className="w-6 h-6" alt={item.name} />
+                <img src={item.icon} className="md:w-10 w-8 md:h-10 h-8" alt={item.name} />
                 <span className="text-sm font-medium text-white">
                   {item.name}
                 </span>
@@ -62,7 +62,7 @@ function Skills() {
 
         {
          <GlowCard>
-           <div className=" bg-black p-1">
+           <div className="  p-1">
 
             <p className="text-center flex justify-center items-center gap-x-3 mt-4">
               <img src={frontend.icon} className="size-10" />
@@ -73,11 +73,11 @@ function Skills() {
 
             <hr className="opacity-50 text-white mt-1" />
 
-            <div className="flex flex-wrap justify-center gap-x-5 mt-6 p-8">
+            <div className=" gap-x-5 mt-6 grid grid-cols-3 justify-center items-center  px-10 gap-y-6">
               {frontend.skill.map((item, key) => (
-                <div key={key} className="border">
-                  <img src={item.icon} />
-                  <p className="text-white">{item.name}</p>
+                <div key={key} className="border border-teal-300/10 hover:border-teal-50 flex flex-col justify-center items-center p-2 rounded transition duration-200 delay-75   ">
+                  <img src={item.icon} className="md:w-10 w-8 md:h-10 h-8" />
+                  <spand className="text-white block">{item.name}</spand>
                 </div>
               ))}
             </div>
@@ -89,7 +89,7 @@ function Skills() {
 
         {
          <GlowCard>
-           <div className=" bg-black w-full">
+           <div className="  w-full">
 
             <p className="text-center flex justify-center items-center gap-x-3 mt-4">
               <img src={backend.icon} className="size-10" />
@@ -101,11 +101,11 @@ function Skills() {
 
             <hr className="opacity-50" />
 
-            <div className="flex flex-wrap justify-center gap-x-5 mt-6 p-8">
+            <div className=" gap-x-5 mt-6 grid grid-cols-3 justify-center items-center  px-10 gap-y-6">
               {backend.skill.map((item, key) => (
-                <div key={key}>
-                  <img src={item.icon} />
-                  <p className="border text-white">{item.name}</p>
+                <div key={key} className="border border-teal-300/10 hover:border-teal-50 flex flex-col justify-center items-center p-2 rounded transition duration-200 delay-75   ">
+                  <img src={item.icon}  className="md:w-10 md:h-10 w-8 h-8"/>
+                  <p className=" text-white">{item.name}</p>
                 </div>
               ))}
             </div>
@@ -117,7 +117,7 @@ function Skills() {
 
         {
          <GlowCard>
-           <div className=" bg-black w-full ">
+           <div className=" w-full ">
 
             <p className="text-center flex justify-center items-center gap-x-3 mt-4">
               <img src={tools.icon} className="size-10" />
@@ -126,11 +126,11 @@ function Skills() {
 
             <hr className="opacity-50" />
 
-            <div className="flex flex-wrap justify-center gap-x-5 mt-6 p-8">
+            <div className=" gap-x-5 mt-6 grid grid-cols-3 justify-center items-center  px-10 gap-y-6">
               {tools.skill.map((item, key) => (
-                <div key={key}>
-                  <img src={item.icon} />
-                  <p className="border text-white">{item.name}</p>
+                <div key={key} className="border border-teal-300/10 hover:border-teal-50 flex flex-col justify-center items-center p-2 rounded transition duration-200 delay-75   ">
+                  <img src={item.icon}  className="w-8 h-8 md:w-10 md:h-10"/>
+                  <p className=" text-white">{item.name}</p>
                 </div>
               ))}
             </div>
