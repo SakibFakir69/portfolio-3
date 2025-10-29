@@ -39,7 +39,7 @@ const menuItems = [
   },
 
   {
-    icon: <User className="h-5 w-5" />,
+    icon: <User className="h-5 w-5 " />,
     label: "Contact",
     href: "/contact",
     gradient:
@@ -88,8 +88,8 @@ const sharedTransition = {
 function MenuBar() {
   return (
     <motion.nav
-      className="p-2 rounded-2xl bg-white/60 dark:bg-black/60 backdrop-blur-lg border border-gray-200/80 dark:border-gray-800/80  dark:shadow-gray-900/20 overflow-hidden z-50 fixed flex justify-center items-center w-full shadow-2xl"
-      initial="initial"
+      className="p-2 rounded-2xl bg-white/60 dark:bg-black/60 backdrop-blur-lg border border-gray-200/80 dark:border-gray-800/80  dark:shadow-gray-900/20 overflow-hidden z-50 fixed  items-center w-full shadow-2xl max-w-4xl flex mx-auto justify-center justify-items-center left-1/2 -translate-x-1/2  top-4  "
+      initial="initial" 
       whileHover="hover"
     >
       {/* Nav Glow Background */}
@@ -134,7 +134,7 @@ function MenuBar() {
                 >
                   {item.icon}
                 </span>
-                <span className="font-medium">{item.label}</span>
+                <span className="font-medium  hidden md:block hidden">{item.label}</span>
               </Link>
 
               {/* Back Side */}
