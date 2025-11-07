@@ -22,10 +22,18 @@ export const skillData = [
       { icon: 'https://img.icons8.com/fluency/48/javascript.png', name: "JavaScript", color: "#F7DF1E" },
       { icon: 'https://img.icons8.com/external-tal-revivo-color-tal-revivo/50/external-react-a-javascript-library-for-building-user-interfaces-logo-color-tal-revivo.png', name: "React.js", color: "#61DAFB" },
       { icon: '', name: "Next.js", color: "#000000" },
-      { icon: '', name: "ShadCN UI", color: "#6B7280" },
-      { icon: 'https://img.icons8.com/color/48/redux.png', name: "Redux ToolKit", color: "#764ABC" },
+      { icon: '', name: "ShadCN", color: "#6B7280" },
+      { icon: 'https://img.icons8.com/color/48/redux.png', name: "Redux", color: "#764ABC" },
     ],
   },
+
+  // mobile app 
+  // {
+  //   title:"Mobile App development",
+  //   icon:"",
+    
+
+  // },
 
   // Backend
   {

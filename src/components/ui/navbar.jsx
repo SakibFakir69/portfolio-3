@@ -130,11 +130,11 @@ function MenuBar() {
                 }}
               >
                 <span
-                  className={`transition-colors duration-300 ${item.iconColor}`}
+                  className={`transition-colors duration-300 text-white ${item.iconColor}`}
                 >
                   {item.icon}
                 </span>
-                <span className="font-medium  hidden md:block hidden">{item.label}</span>
+                <span className="font-medium   md:block hidden text-white">{item.label}</span>
               </Link>
 
               {/* Back Side */}
@@ -150,11 +150,11 @@ function MenuBar() {
                 }}
               >
                 <span
-                  className={`transition-colors duration-300 ${item.iconColor}`}
+                  className={`transition-colors duration-30 ${item.iconColor}`}
                 >
                   {item.icon}
                 </span>
-                <span className="font-medium">{item.label}</span>
+                <span className="font-medium ">{item.label}</span>
               </motion.a>
             </motion.div>
           </motion.li>

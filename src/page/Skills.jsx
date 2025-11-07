@@ -17,7 +17,7 @@ function Skills() {
 
   return (
     <div className={`${location === "/skill" && " py-20"} min-h-screen p-10`}>
-      <h1 className="text-white">My skill</h1>
+      
     
 
 
@@ -71,7 +71,7 @@ function Skills() {
               </p>
             </p>
 
-            <hr className="opacity-50 text-white mt-1" />
+            
 
             <div className=" gap-x-5 mt-6 grid grid-cols-3 justify-center items-center  px-10 gap-y-6">
               {frontend.skill.map((item, key) => (
@@ -99,7 +99,7 @@ function Skills() {
               </p>
             </p>
 
-            <hr className="opacity-50" />
+           
 
             <div className=" gap-x-5 mt-6 grid grid-cols-3 justify-center items-center  px-10 gap-y-6">
               {backend.skill.map((item, key) => (
@@ -124,7 +124,7 @@ function Skills() {
               <p className="font-semibold text-xl text-white"> {tools.title}</p>
             </p>
 
-            <hr className="opacity-50" />
+           
 
             <div className=" gap-x-5 mt-6 grid grid-cols-3 justify-center items-center  px-10 gap-y-6">
               {tools.skill.map((item, key) => (
