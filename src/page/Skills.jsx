@@ -11,9 +11,10 @@ function Skills() {
 
   const langause = skillData[0];
 
-  const frontend = skillData[1];
-  const backend = skillData[2];
-  const tools = skillData[3];
+  const appdev = skillData[1];
+  const frontend= skillData[2];
+  const backend = skillData[3];
+  const tools= skillData[4];
 
   return (
     <div className={`${location === "/skill" && " py-20"} min-h-screen p-10`}>
@@ -23,7 +24,8 @@ function Skills() {
 
       <section className="grid  md:grid-cols-3 grid-cols-1 gap-x-10 gap-3 py-20 bg-transparent">
 
-        <GlowCard>
+
+            <GlowCard>
           <div
           className="  h-full w-full 
            rounded-lg p-4 flex flex-col items-center gap-y-4"
@@ -57,6 +59,42 @@ function Skills() {
           </div>
         </div>
         </GlowCard>
+        <GlowCard>
+          <div
+          className="  h-full w-full 
+           rounded-lg p-4 flex flex-col items-center gap-y-4"
+        >
+           
+          {/* Header */}
+          <div className="flex items-center   ">
+            <img
+              src={appdev.icon}
+              className="w-10 h-10"
+              alt="Language Icon"
+            />
+            <span className="font-semibold text-xl  text-white">
+              {appdev.title}
+            </span>
+          </div>
+          <hr className="opacity-50" />
+          {/* Skills */}
+          <div className="flex flex-wrap justify-center gap-5 mt-4">
+            {appdev.skill.map((item, key) => (
+              <div
+                key={key}
+                className="flex flex-row items-center gap-x-2 border border-teal-300/30 rounded px-3 py-1 hover:border-teal-200 transition duration-150 delay-100"
+              >
+                <img src={item.icon} className="md:w-10 w-8 md:h-10 h-8" alt={item.name} />
+                <span className="text-sm font-medium text-white">
+                  {item.name}
+                </span>
+              </div>
+            ))}
+          </div>
+        </div>
+        </GlowCard>
+
+    
 
         {/* front-end */}
 
